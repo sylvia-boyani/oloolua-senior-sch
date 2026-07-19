@@ -1,0 +1,98 @@
+.olooluaWelcome{
+    padding:120px 8%;
+    background:#FAF8F5;
+}
+
+.welcomeContainer{
+    max-width:1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.welcomeTag{
+    color:#B88A44;
+    font-weight:600;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.welcomeText h2{
+    font-family:"Playfair Display", serif;
+    font-size:3rem;
+    color:#5A3E2B;
+    margin:20px 0;
+    line-height:1.2;
+}
+
+.welcomeText h2 span{
+    color:#B88A44;
+}
+
+.welcomeText p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.welcomeButton{
+    display:inline-block;
+    background:#5A3E2B;
+    color:#fff;
+    padding:16px 34px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.welcomeButton:hover{
+    background:#B88A44;
+}
+
+.welcomeImage{
+    position:relative;
+}
+
+.welcomeImage img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.experienceCard{
+    position:absolute;
+    right:-20px;
+    bottom:30px;
+    background:#fff;
+    padding:30px;
+    width:260px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.1);
+}
+
+.experienceCard h3{
+    color:#5A3E2B;
+    margin-bottom:10px;
+}
+
+.experienceCard p{
+    color:#666;
+    line-height:1.6;
+}
+
+@media(max-width:992px){
+
+.welcomeContainer{
+    grid-template-columns:1fr;
+}
+
+.experienceCard{
+    position:relative;
+    right:0;
+    bottom:0;
+    margin-top:20px;
+    width:100%;
+}
+
+}

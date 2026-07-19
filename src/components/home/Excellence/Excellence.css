@@ -1,0 +1,109 @@
+.excellence{
+    padding:120px 8%;
+    background:#FAF8F5;
+}
+
+.sectionHeading{
+    max-width:750px;
+    margin:auto;
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.sectionHeading span{
+    color:#B88A44;
+    letter-spacing:5px;
+    font-weight:600;
+}
+
+.sectionHeading h2{
+    font-family:"Playfair Display", serif;
+    font-size:3rem;
+    color:#5A3E2B;
+    margin:20px 0;
+}
+
+.sectionHeading h2 span{
+    color:#B88A44;
+}
+
+.sectionHeading p{
+    color:#666;
+    line-height:1.8;
+}
+
+.pathway{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+    margin-bottom:120px;
+}
+
+.pathway.reverse{
+    margin-bottom:0;
+}
+
+.pathwayImage img{
+    width:100%;
+    border-radius:24px;
+    box-shadow:0 20px 45px rgba(0,0,0,.1);
+}
+
+.pathwayIcon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#5A3E2B;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.pathwayContent h3{
+    color:#5A3E2B;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.pathwayContent p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.pathwayContent ul{
+    padding-left:0;
+}
+
+.pathwayContent li{
+    list-style:none;
+    margin-bottom:14px;
+    color:#444;
+}
+
+@media(max-width:991px){
+
+.pathway,
+.pathway.reverse{
+
+    grid-template-columns:1fr;
+
+}
+
+.pathway.reverse .pathwayImage{
+
+    order:-1;
+
+}
+
+.sectionHeading h2{
+
+    font-size:2.4rem;
+
+}
+
+}

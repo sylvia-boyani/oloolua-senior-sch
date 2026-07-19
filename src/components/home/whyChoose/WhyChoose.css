@@ -1,0 +1,130 @@
+.whyChoose{
+
+    padding:120px 8%;
+    background:#fff;
+
+}
+
+.whyHeader{
+
+    max-width:760px;
+    margin:auto;
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.whyHeader span{
+
+    color:#B88A44;
+    letter-spacing:5px;
+    font-weight:600;
+
+}
+
+.whyHeader h2{
+
+    font-family:"Playfair Display", serif;
+    font-size:3rem;
+    color:#5A3E2B;
+    margin:20px 0;
+
+}
+
+.whyHeader h2 span{
+
+    color:#B88A44;
+
+}
+
+.whyHeader p{
+
+    color:#666;
+    line-height:1.9;
+
+}
+
+.whyGrid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    max-width:1300px;
+    margin:auto;
+
+}
+
+.whyCard{
+
+    background:#FAF8F5;
+    padding:45px 35px;
+    border-radius:20px;
+    transition:.35s;
+    text-align:center;
+
+}
+
+.whyCard:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.whyIcon{
+
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    background:#5A3E2B;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2rem;
+    margin-bottom:25px;
+
+}
+
+.whyCard h3{
+
+    color:#5A3E2B;
+    margin-bottom:15px;
+
+}
+
+.whyCard p{
+
+    color:#666;
+    line-height:1.8;
+
+}
+
+@media(max-width:1100px){
+
+.whyGrid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:700px){
+
+.whyGrid{
+
+    grid-template-columns:1fr;
+
+}
+
+.whyHeader h2{
+
+    font-size:2.3rem;
+
+}
+
+}

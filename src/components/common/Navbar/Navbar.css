@@ -1,0 +1,183 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.olooluaNavbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    transition:.4s;
+    padding:22px 0;
+
+}
+
+.olooluaNavbar.scrolled{
+
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* CONTAINER */
+
+.olooluaNavContainer{
+
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+/* LOGO */
+
+.olooluaLogo{
+
+    display:flex;
+    flex-direction:column;
+
+    color:#fff;
+
+}
+
+.olooluaLogo span{
+
+    font-size:2rem;
+    font-family:"Playfair Display",serif;
+    font-weight:700;
+    letter-spacing:2px;
+
+}
+
+.olooluaLogo small{
+
+    color:#D4AF37;
+    letter-spacing:2px;
+
+}
+
+.scrolled .olooluaLogo{
+
+    color:#5A3E2B;
+
+}
+
+/* MENU */
+
+.navMenu{
+
+    display:flex;
+    gap:35px;
+    align-items:center;
+
+}
+
+.navMenu a{
+
+    color:#fff;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.scrolled .navMenu a{
+
+    color:#5A3E2B;
+
+}
+
+.navMenu a:hover{
+
+    color:#D4AF37;
+
+}
+
+/* BUTTON */
+
+.navButton{
+
+    padding:14px 28px;
+    border-radius:40px;
+
+    background:#B88A44 !important;
+    color:#fff !important;
+
+}
+
+.navButton:hover{
+
+    background:#5A3E2B !important;
+    color:#fff !important;
+
+}
+
+/* MOBILE BUTTON */
+
+.menuButton{
+
+    display:none;
+
+    background:none;
+    border:none;
+
+    color:#fff;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+.scrolled .menuButton{
+
+    color:#5A3E2B;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.menuButton{
+
+    display:block;
+
+}
+
+.navMenu{
+
+    position:fixed;
+
+    top:0;
+    right:-100%;
+
+    width:300px;
+    height:100vh;
+
+    background:#5A3E2B;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:30px;
+
+    transition:.4s;
+
+}
+
+.navMenu.active{
+
+    right:0;
+
+}
+
+}
