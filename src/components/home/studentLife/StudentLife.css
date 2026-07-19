@@ -1,0 +1,106 @@
+.studentLife{
+
+    padding:120px 8%;
+    background:#FAF8F5;
+
+}
+
+.lifeHeading{
+
+    max-width:760px;
+    margin:auto;
+    text-align:center;
+    margin-bottom:90px;
+
+}
+
+.lifeHeading span{
+
+    color:#B88A44;
+    letter-spacing:5px;
+    font-weight:600;
+
+}
+
+.lifeHeading h2{
+
+    font-family:"Playfair Display",serif;
+    color:#5A3E2B;
+    font-size:3rem;
+    margin:20px 0;
+
+}
+
+.lifeHeading h2 span{
+
+    color:#B88A44;
+
+}
+
+.lifeHeading p{
+
+    color:#666;
+    line-height:1.9;
+
+}
+
+.lifeRow{
+
+    max-width:1250px;
+    margin:0 auto 90px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+
+}
+
+.lifeRow img{
+
+    width:100%;
+    border-radius:25px;
+    height:420px;
+    object-fit:cover;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.lifeRow h3{
+
+    font-size:2rem;
+    color:#5A3E2B;
+    margin-bottom:20px;
+
+}
+
+.lifeRow p{
+
+    line-height:2;
+    color:#555;
+
+}
+
+@media(max-width:900px){
+
+.lifeRow,
+.lifeRow.reverse{
+
+    grid-template-columns:1fr;
+
+}
+
+.lifeRow.reverse img{
+
+    order:-1;
+
+}
+
+.lifeHeading h2{
+
+    font-size:2.3rem;
+
+}
+
+}
