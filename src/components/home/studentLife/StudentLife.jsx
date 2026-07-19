@@ -17,7 +17,7 @@ const StudentLife = () => {
 
                 <h2>
 
-                    Learning Beyondlsof -i :3000   
+                    Learning Beyond
                     <span> The Classroom</span>
 
                 </h2>
