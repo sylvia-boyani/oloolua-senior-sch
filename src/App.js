@@ -6,6 +6,10 @@ import WhyChoose from "./components/home/whyChoose/WhyChoose";
 import Excellence from "./components/home/Excellence/Excellence";
 import Principal from "./components/home/principal/Principal";
 import StudentLife from "./components/home/studentLife/StudentLife";
+import Achievements from "./components/home/achievements/Achievements"
+import Testimonials from "./components/home/testimonials/Testimonials"
+import CTA from "./components/home/cta/CTA"
+import Footer from "./components/common/footer/Footer"
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
       <Excellence />
       <Principal />
       <StudentLife />
+      <Achievements />
+      <Testimonials />
+      <CTA />
+      <Footer />
     </>
   );
 }

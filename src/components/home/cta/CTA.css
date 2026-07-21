@@ -1,0 +1,135 @@
+/* ==========================
+   CTA SECTION
+========================== */
+
+.ctaSection{
+    position:relative;
+    padding:140px 8%;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    overflow:hidden;
+}
+
+.ctaOverlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        rgba(59,38,26,.88),
+        rgba(59,38,26,.78)
+    );
+}
+
+.ctaContent{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    color:#fff;
+}
+
+.ctaContent span{
+    display:inline-block;
+    color:#D4AF37;
+    letter-spacing:5px;
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.ctaContent h2{
+    font-family:"Playfair Display", serif;
+    font-size:3.5rem;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.ctaContent h2 span{
+    display:block;
+    color:#E8DCCB;
+}
+
+.ctaContent p{
+    font-size:1.15rem;
+    line-height:1.9;
+    color:rgba(255,255,255,.92);
+    max-width:700px;
+    margin:0 auto 45px;
+}
+
+.ctaButtons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.ctaPrimary,
+.ctaSecondary{
+    padding:16px 38px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.ctaPrimary{
+    background:#B88A44;
+    color:#fff;
+}
+
+.ctaPrimary:hover{
+    background:#fff;
+    color:#5A3E2B;
+    transform:translateY(-4px);
+}
+
+.ctaSecondary{
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.ctaSecondary:hover{
+    background:#fff;
+    color:#5A3E2B;
+    transform:translateY(-4px);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.ctaSection{
+    padding:100px 8%;
+    background-attachment:scroll;
+}
+
+.ctaContent h2{
+    font-size:2.5rem;
+}
+
+.ctaContent p{
+    font-size:1rem;
+}
+
+.ctaButtons{
+    flex-direction:column;
+}
+
+.ctaPrimary,
+.ctaSecondary{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.ctaContent h2{
+    font-size:2rem;
+}
+
+}

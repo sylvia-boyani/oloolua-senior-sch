@@ -70,7 +70,7 @@ const Principal = () => {
 
                     <div className="principalSignature">
 
-                        <h4>Dr. Jane Doe</h4>
+                        <h4>Grace Kimani</h4>
 
                         <span>Principal</span>
 
