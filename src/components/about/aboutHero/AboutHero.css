@@ -1,0 +1,209 @@
+/*=========================================
+ABOUT HERO
+=========================================*/
+
+.aboutHero{
+    position:relative;
+    height:90vh;
+    min-height:420px;
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    
+}
+
+/* Overlay */
+
+.aboutHeroOverlay{
+
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(59,38,26,.88) 0%,
+        rgba(59,38,26,.75) 45%,
+        rgba(59,38,26,.55) 100%
+    );
+
+}
+
+/* Content */
+
+.aboutHeroContent{
+
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:1200px;
+
+    color:#fff;
+    padding-top:200px;
+
+}
+
+.aboutHeroTag{
+
+    display:inline-block;
+
+    color:#D4AF37;
+
+    font-size:.95rem;
+    font-weight:600;
+
+    letter-spacing:5px;
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.aboutHeroContent h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:4.3rem;
+    font-weight:700;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+}
+
+.aboutHeroContent h1 span{
+
+    display:block;
+
+    color:#E8DCCB;
+
+}
+
+.aboutHeroContent p{
+
+    max-width:650px;
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.92);
+
+    margin-bottom:40px;
+
+}
+
+/* Breadcrumb */
+
+.breadcrumb{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:.95rem;
+
+}
+
+.breadcrumb a{
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.breadcrumb a:hover{
+
+    color:#D4AF37;
+
+}
+
+.breadcrumb span{
+
+    color:#D4AF37;
+
+}
+
+.breadcrumb strong{
+
+    color:#D4AF37;
+
+    font-weight:600;
+
+}
+
+/*=========================================
+Responsive
+=========================================*/
+
+@media(max-width:992px){
+
+.aboutHero{
+
+    height:45vh;
+    min-height:380px;
+
+}
+
+.aboutHeroContent{
+
+    text-align:center;
+
+}
+
+.aboutHeroContent p{
+
+    margin:0 auto 35px;
+
+}
+
+.breadcrumb{
+
+    justify-content:center;
+
+}
+
+.aboutHeroContent h1{
+
+    font-size:3rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.aboutHero{
+
+    min-height:340px;
+
+}
+
+.aboutHeroTag{
+
+    font-size:.8rem;
+    letter-spacing:3px;
+
+}
+
+.aboutHeroContent h1{
+
+    font-size:2.3rem;
+
+}
+
+.aboutHeroContent p{
+
+    font-size:1rem;
+    line-height:1.7;
+
+}
+
+}
