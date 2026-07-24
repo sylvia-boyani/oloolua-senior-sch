@@ -1,0 +1,140 @@
+/*=================================
+VISION • MISSION
+=================================*/
+
+.visionMission{
+    padding:120px 8%;
+    background:#FAF8F5;
+}
+
+.visionHeading{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.visionHeading span{
+    color:#B88A44;
+    font-weight:600;
+    letter-spacing:5px;
+    text-transform:uppercase;
+}
+
+.visionHeading h2{
+    margin:20px 0;
+    font-size:3rem;
+    font-family:"Playfair Display", serif;
+    color:#5A3E2B;
+    line-height:1.2;
+}
+
+.visionHeading h2 span{
+    display:block;
+    color:#B88A44;
+}
+
+.visionHeading p{
+    color:#666;
+    line-height:1.9;
+}
+
+.visionGrid{
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.visionCard{
+    background:#fff;
+    border-radius:22px;
+    padding:45px 35px;
+    text-align:center;
+
+    transition:.35s;
+    border-top:5px solid #B88A44;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.05);
+}
+
+.visionCard:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.10);
+}
+
+.visionIcon{
+    width:80px;
+    height:80px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    background:#F8F3E7;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2rem;
+
+    color:#B88A44;
+}
+
+.visionCard h3{
+    color:#5A3E2B;
+    margin-bottom:20px;
+    font-size:1.5rem;
+    font-family:"Playfair Display", serif;
+}
+
+.visionCard p{
+    color:#666;
+    line-height:1.9;
+}
+
+.visionCard ul{
+    list-style:none;
+    padding:0;
+    margin-top:10px;
+}
+
+.visionCard ul li{
+    color:#666;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+.visionCard ul li:last-child{
+    border-bottom:none;
+}
+
+/*=============================
+Responsive
+=============================*/
+
+@media(max-width:992px){
+
+.visionGrid{
+    grid-template-columns:1fr;
+}
+
+.visionHeading h2{
+    font-size:2.4rem;
+}
+
+}
+
+@media(max-width:576px){
+
+.visionMission{
+    padding:90px 6%;
+}
+
+.visionHeading h2{
+    font-size:2rem;
+}
+
+}
