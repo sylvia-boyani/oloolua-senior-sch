@@ -3,6 +3,7 @@ import AboutHero from "../../about/aboutHero/AboutHero";
 import Footer from "../../common/footer/Footer";
 import Story from "../../about/story/Story"
 import VisionMission from "../../about/visionMission/VisionMission"
+import Board from "../../about/board/Board"
 
 const About = () => {
   return (
@@ -11,6 +12,7 @@ const About = () => {
       <AboutHero />
       <Story />
       <VisionMission />
+      <Board />
       <Footer />
     </>
   );
