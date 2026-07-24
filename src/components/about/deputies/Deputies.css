@@ -1,0 +1,151 @@
+/*=================================
+DEPUTY PRINCIPALS
+=================================*/
+
+.deputiesSection{
+    padding:120px 8%;
+    background:#fff;
+}
+
+.deputiesHeading{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.deputiesHeading span{
+    color:#B88A44;
+    letter-spacing:5px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+
+.deputiesHeading h2{
+    margin:20px 0;
+    font-family:"Playfair Display", serif;
+    font-size:3rem;
+    color:#5A3E2B;
+    line-height:1.2;
+}
+
+.deputiesHeading h2 span{
+    display:block;
+    color:#B88A44;
+}
+
+.deputiesHeading p{
+    color:#666;
+    line-height:1.9;
+}
+
+.deputiesGrid{
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+}
+
+.deputyCard{
+    background:#FAF8F5;
+    border-radius:24px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.deputyCard:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+}
+
+.deputyImage{
+    height:380px;
+
+    background:#F1ECE5;
+    border-bottom:3px solid #B88A44;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#8A6B47;
+    font-weight:600;
+}
+
+.deputyContent{
+    padding:35px;
+    text-align:center;
+}
+
+.deputyIcon{
+    width:70px;
+    height:70px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#B88A44;
+    font-size:1.7rem;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.deputyContent h3{
+    font-family:"Playfair Display", serif;
+    font-size:2rem;
+    color:#5A3E2B;
+    margin-bottom:10px;
+}
+
+.deputyContent h4{
+    color:#B88A44;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.deputyContent p{
+    color:#666;
+    line-height:1.9;
+}
+
+/*==========================
+Responsive
+==========================*/
+
+@media(max-width:992px){
+
+.deputiesGrid{
+    grid-template-columns:1fr;
+}
+
+.deputiesHeading h2{
+    font-size:2.3rem;
+}
+
+.deputyImage{
+    height:320px;
+}
+
+}
+
+@media(max-width:576px){
+
+.deputiesSection{
+    padding:90px 6%;
+}
+
+.deputyContent h3{
+    font-size:1.7rem;
+}
+
+}

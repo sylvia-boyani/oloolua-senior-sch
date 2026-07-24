@@ -41,7 +41,7 @@ const Principal = () => {
 
           <small>PRINCIPAL</small>
 
-          <h3>Principal's Name</h3>
+          <h3>Grace Kimani</h3>
 
           <h4>Principal, Oloolua Senior School</h4>
 

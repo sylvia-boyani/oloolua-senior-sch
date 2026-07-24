@@ -105,7 +105,7 @@ const Footer = () => {
             <FaPhoneAlt />
 
             <span>
-              +254 XXX XXX XXX
+              +254 758025069
             </span>
 
           </div>
@@ -115,7 +115,7 @@ const Footer = () => {
             <FaEnvelope />
 
             <span>
-              info@olooluaschool.ac.ke
+              olooluasecondary@gmail.com
             </span>
 
           </div>
