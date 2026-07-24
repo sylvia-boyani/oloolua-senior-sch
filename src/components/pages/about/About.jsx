@@ -6,6 +6,8 @@ import VisionMission from "../../about/visionMission/VisionMission"
 import Board from "../../about/board/Board"
 import Principal from "../../about/principal/Principal"
 import Deputies from "../../about/deputies/Deputies"
+import Teachers from "../../about/teachers/Teachers"
+import SupportStaff from "../../about/supportStaff/SupportStaff"
 
 const About = () => {
   return (
@@ -17,6 +19,8 @@ const About = () => {
       <Board />
       <Principal />
       <Deputies />
+      <Teachers />
+      <SupportStaff />
       <Footer />
     </>
   );

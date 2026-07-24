@@ -1,0 +1,160 @@
+/*=====================================
+TEACHERS
+=====================================*/
+
+.teachersSection{
+    padding:120px 8%;
+    background:#FAF8F5;
+}
+
+.teachersHeading{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.teachersHeading span{
+    color:#B88A44;
+    font-weight:600;
+    letter-spacing:5px;
+    text-transform:uppercase;
+}
+
+.teachersHeading h2{
+    margin:20px 0;
+    font-size:3rem;
+    font-family:"Playfair Display", serif;
+    color:#5A3E2B;
+    line-height:1.2;
+}
+
+.teachersHeading h2 span{
+    display:block;
+    color:#B88A44;
+}
+
+.teachersHeading p{
+    color:#666;
+    line-height:1.9;
+}
+
+.teachersGrid{
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+
+    transition:.4s;
+}
+
+.teacherCard{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.05);
+}
+
+.teacherCard:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.10);
+}
+
+.teacherImage{
+    height:280px;
+
+    background:#F1ECE5;
+    border-bottom:3px solid #B88A44;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#8A6B47;
+    font-weight:600;
+}
+
+.teacherContent{
+    padding:25px;
+    text-align:center;
+}
+
+.teacherContent h3{
+    color:#5A3E2B;
+    font-family:"Playfair Display", serif;
+    margin-bottom:10px;
+    font-size:1.4rem;
+}
+
+.teacherContent p{
+    color:#B88A44;
+    font-weight:500;
+}
+
+.teachersButton{
+    text-align:center;
+    margin-top:50px;
+}
+
+.teachersButton button{
+    background:#B88A44;
+    color:#fff;
+
+    padding:15px 38px;
+
+    border:none;
+    border-radius:50px;
+
+    font-size:1rem;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.teachersButton button:hover{
+    background:#5A3E2B;
+}
+
+/*==========================
+Responsive
+==========================*/
+
+@media(max-width:1100px){
+
+.teachersGrid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.teachersHeading h2{
+    font-size:2.3rem;
+}
+
+}
+
+@media(max-width:576px){
+
+.teachersSection{
+    padding:90px 6%;
+}
+
+.teachersGrid{
+    grid-template-columns:1fr;
+}
+
+.teachersHeading h2{
+    font-size:2rem;
+}
+
+.teacherImage{
+    height:240px;
+}
+
+}
