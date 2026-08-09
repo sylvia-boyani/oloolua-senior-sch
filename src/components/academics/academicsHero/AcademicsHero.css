@@ -1,0 +1,156 @@
+/*=====================================
+ACADEMICS HERO
+=====================================*/
+
+.academicsHero{
+    position:relative;
+    min-height:70vh;
+
+    display:flex;
+    align-items:center;
+
+    background-size:cover;
+    background-position:center;
+
+    overflow:hidden;
+}
+
+.academicsOverlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(32,22,14,.82) 0%,
+        rgba(32,22,14,.65) 45%,
+        rgba(32,22,14,.35) 100%
+    );
+}
+
+.academicsHeroContent{
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+
+    color:#fff;
+}
+
+.academicsTag{
+    display:inline-block;
+
+    color:#D4AF37;
+    letter-spacing:6px;
+    font-weight:600;
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+}
+
+.academicsHero h1{
+    font-family:"Playfair Display", serif;
+    font-size:5rem;
+    line-height:1.1;
+
+    max-width:820px;
+
+    margin-bottom:30px;
+}
+
+.academicsHero h1 span{
+    color:#E8D2A7;
+}
+
+.academicsHero p{
+    max-width:700px;
+
+    font-size:1.15rem;
+    line-height:2;
+
+    color:rgba(255,255,255,.92);
+
+    margin-bottom:45px;
+}
+
+.academicsBreadcrumb{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    font-size:1rem;
+}
+
+.academicsBreadcrumb a{
+    color:#fff;
+    transition:.3s;
+}
+
+.academicsBreadcrumb a:hover{
+    color:#D4AF37;
+}
+
+.academicsBreadcrumb span{
+    color:#D4AF37;
+}
+
+.academicsBreadcrumb strong{
+    color:#D4AF37;
+}
+
+/*=========================
+Responsive
+=========================*/
+
+@media(max-width:992px){
+
+.academicsHero{
+    min-height:60vh;
+}
+
+.academicsHero h1{
+    font-size:3.8rem;
+}
+
+}
+
+@media(max-width:768px){
+
+.academicsHero{
+    min-height:55vh;
+}
+
+.academicsHeroContent{
+    width:92%;
+}
+
+.academicsHero h1{
+    font-size:3rem;
+}
+
+.academicsHero p{
+    font-size:1rem;
+}
+
+}
+
+@media(max-width:576px){
+
+.academicsHero{
+    min-height:50vh;
+}
+
+.academicsHero h1{
+    font-size:2.3rem;
+}
+
+.academicsTag{
+    letter-spacing:4px;
+}
+
+.academicsBreadcrumb{
+    flex-wrap:wrap;
+}
+
+}

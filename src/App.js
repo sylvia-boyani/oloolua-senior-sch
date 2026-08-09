@@ -2,12 +2,13 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./components/pages/home/Home";
 import About from "./components/pages/about/About";
+import Academics from "./components/pages/academics/Academics";
 
 function App() {
   return (
     <Routes>
 
-      <Route
+      <Route 
         path="/"
         element={<Home />}
       />
@@ -15,6 +16,11 @@ function App() {
       <Route
         path="/about"
         element={<About />}
+      />
+
+      <Route
+        path="/academics"
+        element={<Academics />}
       />
 
     </Routes>
