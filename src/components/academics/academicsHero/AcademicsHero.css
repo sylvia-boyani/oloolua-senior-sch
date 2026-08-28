@@ -4,8 +4,7 @@ ACADEMICS HERO
 
 .academicsHero{
     position:relative;
-    min-height:70vh;
-
+    height:90vh;
     display:flex;
     align-items:center;
 
@@ -13,6 +12,7 @@ ACADEMICS HERO
     background-position:center;
 
     overflow:hidden;
+    justify-content:center;
 }
 
 .academicsOverlay{
@@ -34,7 +34,7 @@ ACADEMICS HERO
     width:90%;
     max-width:1400px;
     margin:auto;
-
+    margin-top:100px;
     color:#fff;
 }
 

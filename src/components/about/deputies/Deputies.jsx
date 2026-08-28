@@ -4,16 +4,16 @@ import { FaGraduationCap, FaBookOpen } from "react-icons/fa";
 const deputies = [
   {
     name: "Goerge Ndun'gu",
-    role: "Deputy Principal - Administration",
+    role: "Deputy Principal - Academics",
     description:
-      "Provides leadership in school administration, student welfare, discipline and the smooth day-to-day running of the institution.",
+      "Oversees curriculum implementation, academic performance, examinations and instructional quality across all learning areas.",
     icon: <FaGraduationCap />
   },
   {
     name: "Bernice Nderitu",
-    role: "Deputy Principal - Academics",
+    role: "Deputy Principal - Administration",
     description:
-      "Oversees curriculum implementation, academic performance, examinations and instructional quality across all learning areas.",
+      "Provides leadership in school administration, student welfare, discipline and the smooth day-to-day running of the institution.",
     icon: <FaBookOpen />
   }
 ];

@@ -1,4 +1,4 @@
-import Navbar from "../../common/Navbar/Navbar";
+//import Navbar from "../../common/Navbar/Navbar";
 import AboutHero from "../../about/aboutHero/AboutHero";
 import Footer from "../../common/footer/Footer";
 import Story from "../../about/story/Story"
@@ -12,7 +12,7 @@ import SupportStaff from "../../about/supportStaff/SupportStaff"
 const About = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <AboutHero />
       <Story />
       <VisionMission />

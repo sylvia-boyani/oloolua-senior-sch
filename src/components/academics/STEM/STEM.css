@@ -1,0 +1,402 @@
+/* =========================================
+   STEM PAGE
+========================================= */
+
+.stemPage {
+    background: #FAF8F5;
+    color: #333;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.stemHero {
+    min-height: 68vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45, 30, 20, .88),
+            rgba(45, 30, 20, .55),
+            rgba(45, 30, 20, .25)
+        ),
+        url("../../../assets/images/aviation-stem.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.stemHeroOverlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(35, 23, 15, .35),
+        transparent
+    );
+}
+
+.stemHeroContent {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1400px;
+
+    margin: auto;
+    margin-top:100px;
+    color: #fff;
+}
+
+.stemHeroContent > span {
+    color: #D4AF37;
+
+    font-size: .85rem;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.stemHeroContent h1 {
+    max-width: 800px;
+
+    margin: 22px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 5rem;
+
+    line-height: 1.08;
+}
+
+.stemHeroContent h1 span {
+    display: block;
+
+    color: #E4C98C;
+}
+
+.stemHeroContent p {
+    max-width: 700px;
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,.9);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.stemIntro {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 110px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.stemIntro > div > span,
+.stemSectionHeading > span,
+.stemLeadership > div:last-child > span {
+    color: #B88A44;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.stemIntro h2 {
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.4rem;
+
+    line-height: 1.2;
+
+    color: #5A3E2B;
+}
+
+.stemIntro h2 strong {
+    display: block;
+
+    color: #B88A44;
+
+    font-weight: 700;
+}
+
+.stemIntro > p {
+    color: #666;
+
+    font-size: 1rem;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   AREAS
+========================================= */
+
+.stemAreas {
+    padding: 110px 8%;
+
+    background: #fff;
+}
+
+.stemSectionHeading {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.stemSectionHeading h2 {
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3rem;
+
+    color: #5A3E2B;
+}
+
+.stemSectionHeading h2 strong {
+    color: #B88A44;
+}
+
+.stemAreaGrid {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* AREA CARD */
+
+.stemAreaGrid article {
+    padding: 38px 32px;
+
+    background: #FAF8F5;
+
+    border-radius: 20px;
+
+    border: 1px solid #E9DFD2;
+
+    transition: .35s;
+}
+
+.stemAreaGrid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,.08);
+}
+
+.stemAreaGrid article > span {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2rem;
+
+    color: #D5BD94;
+}
+
+.stemAreaGrid h3 {
+    margin: 18px 0 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.6rem;
+
+    color: #5A3E2B;
+}
+
+.stemAreaGrid p {
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: .95rem;
+
+    margin-bottom: 25px;
+}
+
+.stemAreaGrid small {
+    color: #B88A44;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   LEADERSHIP
+========================================= */
+
+.stemLeadership {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 110px 8%;
+
+    display: grid;
+
+    grid-template-columns: .9fr 1.1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.stemLeaderImage {
+    height: 450px;
+
+    border-radius: 25px;
+
+    background: #E8DED2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #8C7967;
+
+    font-size: .9rem;
+
+    border: 1px solid #DCCDBD;
+}
+
+.stemLeadership h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3rem;
+
+    color: #5A3E2B;
+}
+
+.stemLeadership h2 strong {
+    display: block;
+
+    color: #B88A44;
+}
+
+.stemLeadership h3 {
+    font-size: 1.4rem;
+
+    color: #5A3E2B;
+
+    margin-bottom: 15px;
+}
+
+.stemLeadership p {
+    color: #666;
+
+    line-height: 1.9;
+
+    max-width: 600px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .stemHeroContent h1 {
+        font-size: 4rem;
+    }
+
+    .stemIntro {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .stemAreaGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .stemLeadership {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .stemHero {
+        min-height: 60vh;
+    }
+
+    .stemHeroContent h1 {
+        font-size: 3rem;
+    }
+
+    .stemHeroContent p {
+        font-size: 1rem;
+    }
+
+    .stemIntro,
+    .stemAreas,
+    .stemLeadership {
+        padding: 80px 6%;
+    }
+
+    .stemIntro h2,
+    .stemSectionHeading h2,
+    .stemLeadership h2 {
+        font-size: 2.4rem;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .stemHeroContent h1 {
+        font-size: 2.4rem;
+    }
+
+    .stemHeroContent > span {
+        letter-spacing: 2px;
+    }
+
+    .stemLeaderImage {
+        height: 330px;
+    }
+
+}

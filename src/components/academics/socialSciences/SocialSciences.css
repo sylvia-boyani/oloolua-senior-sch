@@ -1,0 +1,341 @@
+/* =========================================
+   SOCIAL SCIENCES PAGE
+========================================= */
+
+.socialPage {
+    background: #FAF8F5;
+
+    color: #333;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.socialHero {
+    min-height: 68vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(65, 42, 27, .88),
+            rgba(65, 42, 27, .55),
+            rgba(65, 42, 27, .25)
+        ),
+        url("../../../assets/images/14.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.socialHeroOverlay {
+    position: absolute;
+
+    inset: 0;
+}
+
+.socialHeroContent {
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 1400px;
+
+    margin: auto;
+    margin-top:100px;
+    color: #fff;
+}
+
+.socialHeroContent > span {
+    color: #D4AF37;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.socialHeroContent h1 {
+    max-width: 850px;
+
+    margin: 22px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 4.7rem;
+
+    line-height: 1.1;
+}
+
+.socialHeroContent h1 span {
+    display: block;
+
+    color: #E4C98C;
+}
+
+.socialHeroContent p {
+    max-width: 700px;
+
+    color: rgba(255,255,255,.9);
+
+    line-height: 1.9;
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.socialIntro {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 110px 8%;
+
+    text-align: center;
+}
+
+.socialIntro > span,
+.socialLeadership > div:last-child > span {
+    color: #B88A44;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.socialIntro h2 {
+    margin: 20px 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.4rem;
+
+    color: #5A3E2B;
+}
+
+.socialIntro h2 strong {
+    color: #B88A44;
+}
+
+.socialIntro p {
+    color: #666;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   AREAS
+========================================= */
+
+.socialAreas {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px 8% 110px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.socialArea {
+    padding: 45px 38px;
+
+    background: #fff;
+
+    border-radius: 22px;
+
+    border: 1px solid #E8DED2;
+
+    transition: .35s;
+}
+
+.socialArea:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.08);
+}
+
+.socialArea > span {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.2rem;
+
+    color: #D5BD94;
+}
+
+.socialArea h3 {
+    margin: 20px 0 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.7rem;
+
+    color: #5A3E2B;
+}
+
+.socialArea p {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+.socialArea small {
+    color: #B88A44;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   LEADERSHIP
+========================================= */
+
+.socialLeadership {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 110px 8%;
+
+    display: grid;
+
+    grid-template-columns: .9fr 1.1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.socialLeaderImage {
+    height: 430px;
+
+    background: #E8DED2;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #8C7967;
+}
+
+.socialLeadership h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3rem;
+
+    color: #5A3E2B;
+}
+
+.socialLeadership h2 strong {
+    display: block;
+
+    color: #B88A44;
+}
+
+.socialLeadership h3 {
+    color: #5A3E2B;
+
+    margin-bottom: 15px;
+}
+
+.socialLeadership p {
+    max-width: 600px;
+
+    color: #666;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .socialHeroContent h1 {
+        font-size: 3.8rem;
+    }
+
+    .socialAreas {
+        grid-template-columns: 1fr;
+    }
+
+    .socialLeadership {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .socialHero {
+        min-height: 60vh;
+    }
+
+    .socialHeroContent h1 {
+        font-size: 3rem;
+    }
+
+    .socialIntro,
+    .socialAreas,
+    .socialLeadership {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .socialIntro h2,
+    .socialLeadership h2 {
+        font-size: 2.4rem;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .socialHeroContent h1 {
+        font-size: 2.35rem;
+    }
+
+    .socialArea {
+        padding: 32px 25px;
+    }
+
+    .socialLeaderImage {
+        height: 330px;
+    }
+
+}

@@ -1,0 +1,348 @@
+/* =========================================
+   ARTS & SPORTS SCIENCE PAGE
+========================================= */
+
+.artsSportsPage {
+    background: #FAF8F5;
+
+    color: #333;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.artsSportsHero {
+    min-height: 68vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(65, 42, 27, .9),
+            rgba(65, 42, 27, .55),
+            rgba(65, 42, 27, .2)
+        ),
+        url("../../../assets/images/sports.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.artsSportsOverlay {
+    position: absolute;
+
+    inset: 0;
+}
+
+.artsSportsContent {
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 1400px;
+
+    margin: auto;
+    margin-top:100px;
+    color: #fff;
+}
+
+.artsSportsContent > span {
+    color: #D4AF37;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.artsSportsContent h1 {
+    max-width: 800px;
+
+    margin: 22px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 5rem;
+
+    line-height: 1.08;
+}
+
+.artsSportsContent h1 span {
+    display: block;
+
+    color: #E4C98C;
+}
+
+.artsSportsContent p {
+    max-width: 700px;
+
+    color: rgba(255,255,255,.9);
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.artsSportsIntro {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 110px 8%;
+
+    text-align: center;
+}
+
+.artsSportsIntro > span,
+.artsSportsLeadership > div:last-child > span {
+    color: #B88A44;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.artsSportsIntro h2 {
+    margin: 20px 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.3rem;
+
+    line-height: 1.2;
+
+    color: #5A3E2B;
+}
+
+.artsSportsIntro h2 strong {
+    color: #B88A44;
+}
+
+.artsSportsIntro p {
+    color: #666;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   AREAS
+========================================= */
+
+.artsSportsAreas {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px 8% 110px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.artsSportsArea {
+    padding: 45px 38px;
+
+    background: #fff;
+
+    border-radius: 22px;
+
+    border: 1px solid #E8DED2;
+
+    transition: .35s;
+}
+
+.artsSportsArea:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.08);
+}
+
+.artsSportsArea > span {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.2rem;
+
+    color: #D5BD94;
+}
+
+.artsSportsArea h3 {
+    margin: 20px 0 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.8rem;
+
+    color: #5A3E2B;
+}
+
+.artsSportsArea p {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+.artsSportsArea small {
+    color: #B88A44;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   LEADERSHIP
+========================================= */
+
+.artsSportsLeadership {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 110px 8%;
+
+    display: grid;
+
+    grid-template-columns: .9fr 1.1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.artsSportsLeaderImage {
+    height: 430px;
+
+    background: #E8DED2;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #8C7967;
+}
+
+.artsSportsLeadership h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3rem;
+
+    line-height: 1.2;
+
+    color: #5A3E2B;
+}
+
+.artsSportsLeadership h2 strong {
+    display: block;
+
+    color: #B88A44;
+}
+
+.artsSportsLeadership h3 {
+    color: #5A3E2B;
+
+    margin-bottom: 15px;
+
+    font-size: 1.4rem;
+}
+
+.artsSportsLeadership p {
+    max-width: 600px;
+
+    color: #666;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .artsSportsContent h1 {
+        font-size: 4rem;
+    }
+
+    .artsSportsAreas {
+        grid-template-columns: 1fr;
+    }
+
+    .artsSportsLeadership {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .artsSportsHero {
+        min-height: 60vh;
+    }
+
+    .artsSportsContent h1 {
+        font-size: 3rem;
+    }
+
+    .artsSportsIntro,
+    .artsSportsAreas,
+    .artsSportsLeadership {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .artsSportsIntro h2,
+    .artsSportsLeadership h2 {
+        font-size: 2.4rem;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .artsSportsContent h1 {
+        font-size: 2.35rem;
+    }
+
+    .artsSportsArea {
+        padding: 32px 25px;
+    }
+
+    .artsSportsLeaderImage {
+        height: 330px;
+    }
+
+}
