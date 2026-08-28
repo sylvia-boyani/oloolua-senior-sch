@@ -1,9 +1,23 @@
+import {
+  FaFlask,
+  FaLaptopCode,
+  FaLeaf,
+  FaCalculator,
+  FaAtom,
+  FaDna,
+  FaTools,
+  FaCogs,
+  FaDraftingCompass,
+  FaMicrochip
+} from "react-icons/fa";
+
 import "./STEM.css";
 
 const STEM = () => {
   return (
     <main className="stemPage">
 
+      {/* ================= HERO ================= */}
       <section className="stemHero">
 
         <div className="stemHeroOverlay"></div>
@@ -28,6 +42,7 @@ const STEM = () => {
       </section>
 
 
+      {/* ================= INTRO ================= */}
       <section className="stemIntro">
 
         <div>
@@ -52,6 +67,7 @@ const STEM = () => {
       </section>
 
 
+      {/* ================= AREAS ================= */}
       <section className="stemAreas">
 
         <div className="stemSectionHeading">
@@ -63,13 +79,28 @@ const STEM = () => {
             <strong> Disciplines.</strong>
           </h2>
 
+          <p>
+            Discover the subjects and learning experiences available
+            within each STEM area.
+          </p>
+
         </div>
 
 
         <div className="stemAreaGrid">
 
-          <article>
-            <span>01</span>
+          {/* ================= APPLIED SCIENCES ================= */}
+          <article className="stemAreaCard">
+
+            <div className="stemAreaTop">
+
+              <span className="stemNumber">01</span>
+
+              <div className="stemAreaIcon">
+                <FaFlask />
+              </div>
+
+            </div>
 
             <h3>Applied Sciences</h3>
 
@@ -78,12 +109,53 @@ const STEM = () => {
               applications in solving real-world problems.
             </p>
 
+            <div className="stemSubjects">
+
+              <h4>Subjects</h4>
+
+              <div className="subjectGrid">
+
+                <div className="subjectItem">
+                  <FaFlask />
+                  <span>General Science</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaLeaf />
+                  <span>Agriculture</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaLaptopCode />
+                  <span>Computer Studies</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaFlask />
+                  <span>Home Science</span>
+                </div>
+
+              </div>
+
+            </div>
+
             <small>Coordinator: Freida</small>
+
           </article>
 
 
-          <article>
-            <span>02</span>
+          {/* ================= TECHNICAL STUDIES ================= */}
+          <article className="stemAreaCard">
+
+            <div className="stemAreaTop">
+
+              <span className="stemNumber">02</span>
+
+              <div className="stemAreaIcon">
+                <FaCogs />
+              </div>
+
+            </div>
 
             <h3>Technical Studies</h3>
 
@@ -92,12 +164,53 @@ const STEM = () => {
               design and hands-on skills.
             </p>
 
+            <div className="stemSubjects">
+
+              <h4>Subjects</h4>
+
+              <div className="subjectGrid">
+
+                <div className="subjectItem">
+                  <FaTools />
+                  <span>Technical Studies</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaDraftingCompass />
+                  <span>Aviation</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaMicrochip />
+                  <span>Electrical Technology</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaCogs />
+                  <span>Building & Construction</span>
+                </div>
+
+              </div>
+
+            </div>
+
             <small>Coordinator: Onyancha</small>
+
           </article>
 
 
-          <article>
-            <span>03</span>
+          {/* ================= PURE SCIENCES ================= */}
+          <article className="stemAreaCard">
+
+            <div className="stemAreaTop">
+
+              <span className="stemNumber">03</span>
+
+              <div className="stemAreaIcon">
+                <FaAtom />
+              </div>
+
+            </div>
 
             <h3>Pure Sciences</h3>
 
@@ -106,7 +219,38 @@ const STEM = () => {
               investigation and analytical thinking.
             </p>
 
+            <div className="stemSubjects">
+
+              <h4>Subjects</h4>
+
+              <div className="subjectGrid">
+
+                <div className="subjectItem">
+                  <FaCalculator />
+                  <span>Mathematics</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaDna />
+                  <span>Biology</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaFlask />
+                  <span>Chemistry</span>
+                </div>
+
+                <div className="subjectItem">
+                  <FaAtom />
+                  <span>Physics</span>
+                </div>
+
+              </div>
+
+            </div>
+
             <small>Coordinator: Mrs. Mitema</small>
+
           </article>
 
         </div>
@@ -114,6 +258,7 @@ const STEM = () => {
       </section>
 
 
+      {/* ================= LEADERSHIP ================= */}
       <section className="stemLeadership">
 
         <div className="stemLeaderImage">

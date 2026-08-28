@@ -200,6 +200,218 @@
 }
 
 
+/* ================================
+   STEM SUBJECTS
+================================ */
+
+.stemSectionHeading p {
+  max-width: 650px;
+  margin: 15px auto 0;
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   AREA CARD
+================================ */
+
+.stemAreaCard {
+  position: relative;
+  padding: 35px;
+  background: #fff;
+  border: 1px solid #e9e4dc;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.stemAreaCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #8b5e3c;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.stemAreaCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.09);
+}
+
+.stemAreaCard:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* ================================
+   CARD TOP
+================================ */
+
+.stemAreaTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.stemNumber {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #a88954;
+}
+
+.stemAreaIcon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f5f0e8;
+  color: #8b5e3c;
+
+  font-size: 24px;
+
+  transition: all 0.3s ease;
+}
+
+.stemAreaCard:hover .stemAreaIcon {
+  background: #8b5e3c;
+  color: #fff;
+  transform: rotate(5deg);
+}
+
+
+/* ================================
+   CARD CONTENT
+================================ */
+
+.stemAreaCard h3 {
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: #2c2c2c;
+}
+
+.stemAreaCard > p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+
+/* ================================
+   SUBJECTS
+================================ */
+
+.stemSubjects {
+  margin-bottom: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.stemSubjects h4 {
+  margin-bottom: 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #8b5e3c;
+}
+
+
+/* ================================
+   SUBJECT GRID
+================================ */
+
+.subjectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.subjectItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 10px;
+
+  background: #faf8f4;
+  border: 1px solid #eee8df;
+
+  transition: all 0.3s ease;
+}
+
+.subjectItem svg {
+  flex-shrink: 0;
+  color: #a88954;
+  font-size: 15px;
+}
+
+.subjectItem span {
+  font-size: 13px;
+  color: #444;
+}
+
+.subjectItem:hover {
+  background: #f2ede4;
+  transform: translateX(3px);
+}
+
+
+/* ================================
+   COORDINATOR
+================================ */
+
+.stemAreaCard small {
+  display: block;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+
+  color: #777;
+  font-size: 12px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .stemAreaGrid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .stemAreaCard {
+    padding: 25px;
+  }
+
+  .subjectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .stemAreaCard h3 {
+    font-size: 21px;
+  }
+
+}
+
+
+
 /* AREA CARD */
 
 .stemAreaGrid article {
