@@ -1,9 +1,9 @@
 import "./StudentLife.css";
 
-import lab from "../../../assets/images/4.jpeg";
+import lab from "../../../assets/images/students-aviation.jpeg";
 import sports from "../../../assets/images/sports.jpeg";
 import clubs from "../../../assets/images/7.jpeg";
-import leadership from "../../../assets/images/11.jpeg";
+import leadership from "../../../assets/images/senior.jpeg";
 
 const StudentLife = () => {
 

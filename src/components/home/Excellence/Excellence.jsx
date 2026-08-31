@@ -1,6 +1,6 @@
 import "./Excellence.css";
 
-import stem from "../../../assets/images/1.jpeg";
+import stem from "../../../assets/images/aviation-stem.jpeg";
 import sports from "../../../assets/images/sports.jpeg";
 
 import { FaLaptopCode, FaFutbol } from "react-icons/fa";

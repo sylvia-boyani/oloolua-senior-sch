@@ -1,5 +1,5 @@
 import "./Welcome.css";
-import schoolImage from "../../../assets/images/8.jpeg";
+import schoolImage from "../../../assets/images/highschool.jpeg";
 
 const Welcome = () => {
   return (
