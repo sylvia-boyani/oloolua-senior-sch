@@ -7,6 +7,7 @@ import STEM from "./components/academics/STEM/STEM";
 import SocialSciences from "./components/academics/socialSciences/SocialSciences";
 import ArtsSports from "./components/academics/artsSports/ArtsSports";
 import Navbar from "./components/common/Navbar/Navbar";
+import Admissions from "./components/pages/admission/Admissions";
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
 
       <Route
         path="/academics/arts-sports" element={<ArtsSports />} />
+
+      <Route
+        path="/admissions"
+        element={<Admissions />} />
 
     </Routes>
     </>

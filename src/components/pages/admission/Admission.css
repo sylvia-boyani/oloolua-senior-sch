@@ -1,0 +1,746 @@
+/* =========================================
+   ADMISSIONS PAGE
+========================================= */
+
+.admissionsPage {
+    background: #FAF8F5;
+    color: #333;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.admissionsHero {
+    min-height: 68vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.admissionsHeroOverlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45,29,20,.92) 0%,
+            rgba(45,29,20,.72) 40%,
+            rgba(45,29,20,.35) 75%,
+            rgba(45,29,20,.15) 100%
+        );
+}
+
+.admissionsHeroContent {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1400px;
+
+    margin: auto;
+    padding-top: 70px;
+
+    color: #fff;
+}
+
+.admissionsHeroContent > span {
+    display: inline-block;
+
+    color: #D4AF37;
+
+    font-size: .85rem;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.admissionsHeroContent h1 {
+    max-width: 850px;
+
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 5rem;
+
+    line-height: 1.05;
+}
+
+.admissionsHeroContent h1 strong {
+    display: block;
+
+    color: #E5CC9A;
+}
+
+.admissionsHeroContent p {
+    max-width: 680px;
+
+    margin-bottom: 30px;
+
+    color: rgba(255,255,255,.9);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+.admissionsBreadcrumb {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: .9rem;
+}
+
+.admissionsBreadcrumb a {
+    color: #fff;
+}
+
+.admissionsBreadcrumb a:hover {
+    color: #D4AF37;
+}
+
+.admissionsBreadcrumb span {
+    color: #D4AF37;
+}
+
+.admissionsBreadcrumb strong {
+    color: rgba(255,255,255,.7);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.admissionIntro {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 110px 6%;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr .8fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.sectionLabel {
+    color: #B88A44;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.admissionIntroText h2 {
+    margin: 20px 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.5rem;
+
+    line-height: 1.15;
+
+    color: #5A3E2B;
+}
+
+.admissionIntroText h2 strong {
+    display: block;
+
+    color: #B88A44;
+}
+
+.admissionIntroText p {
+    max-width: 700px;
+
+    margin-bottom: 18px;
+
+    color: #666;
+
+    line-height: 1.9;
+}
+
+
+/* INTRO CARD */
+
+.admissionIntroCard {
+    min-height: 350px;
+
+    padding: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    background: #5A3E2B;
+
+    color: #fff;
+
+    border-radius: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.admissionIntroCard::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border: 1px solid rgba(212,175,55,.35);
+
+    border-radius: 50%;
+
+    top: -70px;
+    right: -50px;
+}
+
+.introCardNumber {
+    position: absolute;
+
+    top: 35px;
+    left: 40px;
+
+    color: #D4AF37;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 2rem;
+}
+
+.admissionIntroCard h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.5rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+}
+
+.admissionIntroCard p {
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.sectionHeading {
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.sectionHeading > span {
+    color: #B88A44;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.sectionHeading h2 {
+    margin: 18px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.3rem;
+
+    line-height: 1.15;
+
+    color: #5A3E2B;
+}
+
+.sectionHeading h2 strong {
+    display: block;
+
+    color: #B88A44;
+}
+
+.sectionHeading p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   WHY OLOOLUA
+========================================= */
+
+.whyOloolua {
+    padding: 110px 6%;
+
+    background: #fff;
+}
+
+.admissionFeatures {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.admissionFeature {
+    padding: 38px 32px;
+
+    background: #FAF8F5;
+
+    border: 1px solid #E9DFD2;
+
+    border-radius: 20px;
+
+    transition: .35s;
+}
+
+.admissionFeature:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,.08);
+}
+
+.featureIcon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    background: #5A3E2B;
+
+    color: #D4AF37;
+
+    font-family: "Playfair Display", serif;
+
+    font-weight: 600;
+}
+
+.admissionFeature h3 {
+    margin-bottom: 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.5rem;
+
+    color: #5A3E2B;
+}
+
+.admissionFeature p {
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: .93rem;
+}
+
+
+/* =========================================
+   REQUIREMENTS
+========================================= */
+
+.admissionRequirements {
+    padding: 110px 6%;
+
+    background: #FAF8F5;
+}
+
+.requirementsGrid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.requirementCard {
+    padding: 35px;
+
+    background: #fff;
+
+    border-radius: 18px;
+
+    border-left: 4px solid #B88A44;
+}
+
+.requirementCard > span {
+    color: #D4AF37;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.5rem;
+}
+
+.requirementCard h3 {
+    margin: 10px 0;
+
+    font-family: "Playfair Display", serif;
+
+    color: #5A3E2B;
+
+    font-size: 1.4rem;
+}
+
+.requirementCard p {
+    color: #666;
+
+    line-height: 1.7;
+}
+
+.requirementsNote {
+    max-width: 900px;
+
+    margin: 40px auto 0;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: .9rem;
+
+    line-height: 1.7;
+}
+
+.requirementsNote strong {
+    color: #5A3E2B;
+}
+
+
+/* =========================================
+   APPLICATION PROCESS
+========================================= */
+
+.applicationProcess {
+    padding: 110px 6%;
+
+    background: #fff;
+}
+
+.processGrid {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: center;
+}
+
+.processStep {
+    width: 240px;
+
+    text-align: center;
+}
+
+.processNumber {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #5A3E2B;
+
+    color: #D4AF37;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.3rem;
+}
+
+.processStep h3 {
+    margin-bottom: 12px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #5A3E2B;
+
+    font-size: 1.4rem;
+}
+
+.processStep p {
+    color: #666;
+
+    font-size: .9rem;
+
+    line-height: 1.7;
+}
+
+.processLine {
+    width: 70px;
+
+    height: 1px;
+
+    margin-top: 32px;
+
+    background: #D8C9B7;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.admissionCTA {
+    padding: 120px 6%;
+
+    background: #5A3E2B;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.admissionCTAContent {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.admissionCTAContent > span {
+    color: #D4AF37;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.admissionCTA h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.8rem;
+
+    line-height: 1.1;
+}
+
+.admissionCTA h2 strong {
+    display: block;
+
+    color: #E5CC9A;
+}
+
+.admissionCTA p {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.8;
+}
+
+.admissionCTAButtons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.admissionPrimaryButton,
+.admissionSecondaryButton {
+    padding: 15px 30px;
+
+    border-radius: 40px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.admissionPrimaryButton {
+    background: #B88A44;
+
+    color: #fff;
+}
+
+.admissionPrimaryButton:hover {
+    background: #D4AF37;
+
+    transform: translateY(-3px);
+}
+
+.admissionSecondaryButton {
+    border: 1px solid rgba(255,255,255,.4);
+
+    color: #fff;
+}
+
+.admissionSecondaryButton:hover {
+    background: #fff;
+
+    color: #5A3E2B;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .admissionsHeroContent h1 {
+        font-size: 4rem;
+    }
+
+    .admissionIntro {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .admissionFeatures {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .processGrid {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 35px;
+    }
+
+    .processLine {
+        width: 1px;
+
+        height: 40px;
+
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .admissionsHero {
+        min-height: 60vh;
+    }
+
+    .admissionsHeroContent {
+        padding-top: 90px;
+    }
+
+    .admissionsHeroContent h1 {
+        font-size: 3rem;
+    }
+
+    .admissionIntro,
+    .whyOloolua,
+    .admissionRequirements,
+    .applicationProcess {
+        padding: 80px 6%;
+    }
+
+    .sectionHeading h2,
+    .admissionIntroText h2 {
+        font-size: 2.5rem;
+    }
+
+    .admissionFeatures,
+    .requirementsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .admissionCTA {
+        padding: 90px 6%;
+    }
+
+    .admissionCTA h2 {
+        font-size: 2.8rem;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .admissionsHeroContent h1 {
+        font-size: 2.4rem;
+    }
+
+    .admissionsHeroContent p {
+        font-size: .9rem;
+    }
+
+    .admissionIntroCard {
+        min-height: 300px;
+
+        padding: 30px;
+    }
+
+    .admissionIntroCard h3 {
+        font-size: 2rem;
+    }
+
+    .admissionCTAButtons {
+        flex-direction: column;
+    }
+
+}
