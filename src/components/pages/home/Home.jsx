@@ -9,7 +9,6 @@ import StudentLife from "../../../components/home/studentLife/StudentLife";
 import Achievements from "../../../components/home/achievements/Achievements"
 import Testimonials from "../../../components/home/testimonials/Testimonials"
 import CTA from "../../../components/home/cta/CTA"
-import Footer from "../../../components/common/footer/Footer"
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
       <Achievements />
       <Testimonials />
       <CTA />
-      <Footer />
     </>
   );
 }

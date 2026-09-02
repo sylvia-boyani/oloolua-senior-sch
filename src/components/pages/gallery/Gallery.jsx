@@ -1,102 +1,259 @@
 import { useState } from "react";
 import "./Gallery.css";
 
-import gallery1 from "../../../assets/images/students.jpeg";
-import gallery2 from "../../../assets/images/6.jpeg";
-import gallery3 from "../../../assets/images/7.jpeg";
-import gallery4 from "../../../assets/images/8.jpeg";
-import gallery5 from "../../../assets/images/9.jpeg";
-import gallery6 from "../../../assets/images/10.jpeg";
+/* =====================
+   SCHOOL LIFE
+========================= */
 
-const galleryItems = [
+import students1 from "../../../assets/images/students.jpeg";
+import students2 from "../../../assets/images/6.jpeg";
+import students3 from "../../../assets/images/7.jpeg";
+
+/* =========================
+   ACADEMICS
+========================= */
+
+import academics1 from "../../../assets/images/8.jpeg";
+import academics2 from "../../../assets/images/9.jpeg";
+import academics3 from "../../../assets/images/10.jpeg";
+
+import teachers1 from "../../../assets/images/teachers-r1.jpeg";
+import teachers2 from "../../../assets/images/teachers-r2.jpeg";
+import teachers3 from "../../../assets/images/teachers-r3.jpeg";
+import teachers4 from "../../../assets/images/teachers-r4.jpeg";
+
+
+import fashion1 from "../../../assets/images/fashion-pri.jpeg";
+import fashion2 from "../../../assets/images/fashion-win.jpeg";
+import fashion3 from "../../../assets/images/fashi-2.jpeg";
+import fashion4 from "../../../assets/images/fash-1.jpeg";
+import fashion5 from "../../../assets/images/fash-selfie.jpeg";
+
+const gallerySections = [
+
   {
-    image: gallery1,
-    title: "Life at Oloolua",
-    category: "School Life"
+    category: "School Life",
+
+    description:
+      "Everyday moments that reflect friendship, learning and life within the Oloolua community.",
+
+    images: [
+
+      {
+        image: students1,
+        title: "Life at Oloolua"
+      },
+
+      {
+        image: students2,
+        title: "Students Learning Together"
+      },
+
+      {
+        image: students3,
+        title: "Student Community"
+      }
+
+    ]
   },
-   {
-    image: gallery1,
-    title: "students-learning",
-    category: "School Life"
-  },
-   {
-    image: gallery1,
-    title: "students-at-lunch",
-    category: "School Life"
-  },
+
+
   {
-    image: gallery2,
-    title: "Learning & Discovery",
-    category: "Academics"
+    category: "Academics",
+
+    description:
+      "Learning, discovery and academic experiences that inspire curiosity and excellence.",
+
+    images: [
+
+      {
+        image: academics1,
+        title: "Classroom Learning"
+      },
+
+      {
+        image: academics2,
+        title: "Learning & Discovery"
+      },
+
+      {
+        image: academics3,
+        title: "Academic Excellence"
+      }
+
+    ]
   },
+
+
   {
-    image: gallery3,
-    title: "Student Community",
-    category: "School Life"
+    category: "Sports",
+
+    description:
+      "Moments from the field where learners develop teamwork, discipline and sporting talent.",
+
+    images: [
+
+      {
+        image: students2,
+        title: "Sports & Talent"
+      },
+
+      {
+        image: academics1,
+        title: "Teamwork"
+      },
+
+      {
+        image: students3,
+        title: "Student Athletes"
+      },
+
+      {
+        image: academics2,
+        title: "Training Sessions"
+      }
+
+    ]
   },
+
+
   {
-    image: gallery4,
-    title: "Sports & Talent",
-    category: "Sports"
+    category: "Fashion",
+
+    description:
+      "Celebrating creativity, confidence, culture and personal expression through fashion.",
+
+    images: [
+
+      {
+        image: fashion1,
+        title: "Fashion Showcase"
+      },
+
+      {
+        image: fashion2,
+        title: "Creative Style"
+      },
+
+      {
+        image: fashion3,
+        title: "Student Fashion"
+      },
+
+      {
+        image: fashion4,
+        title: "Culture & Style"
+      },
+
+      {
+        image: fashion5,
+        title: "Fashion Day"
+      },
+
+      {
+        image: fashion1,
+        title: "Creative Expression"
+      }
+
+    ]
   },
+
+
   {
-    image: gallery5,
-    title: "Student Achievement",
-    category: "Achievements"
-  },
-  {
-    image: gallery6,
-    title: "Oloolua Community",
-    category: "School Life"
+    category: "Achievements",
+
+    description:
+      "Celebrating accomplishments, milestones and moments of excellence across the school.",
+
+    images: [
+
+      {
+        image: academics3,
+        title: "Student Achievement"
+      },
+
+      {
+        image: students1,
+        title: "Celebrating Excellence"
+      },
+
+      {
+        image: academics2,
+        title: "Recognising Success"
+      }
+
+    ]
   }
+
 ];
+
 
 const categories = [
   "All",
   "School Life",
   "Academics",
   "Sports",
+  "Fashion",
   "Achievements"
 ];
 
+
 const Gallery = () => {
 
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [activeCategory, setActiveCategory] =
+    useState("All");
 
-  const filteredGallery =
+  const [selectedImage, setSelectedImage] =
+    useState(null);
+
+
+  const visibleSections =
     activeCategory === "All"
-      ? galleryItems
-      : galleryItems.filter(
-          item => item.category === activeCategory
+      ? gallerySections
+      : gallerySections.filter(
+          section =>
+            section.category === activeCategory
         );
+
 
   return (
     <main className="galleryPage">
 
-      {/* =====================================
+
+      {/* =========================
           HERO
-      ===================================== */}
+      ========================= */}
 
       <section
         className="galleryHero"
-        style={{ backgroundImage: `url(${gallery1})` }}
+        style={{
+          backgroundImage: `url(${students1})`
+        }}
       >
 
         <div className="galleryHeroOverlay"></div>
 
+
         <div className="galleryHeroContent">
 
-          <span>OUR GALLERY</span>
+          <span>
+            OUR GALLERY
+          </span>
 
           <h1>
+
             Moments That
-            <strong>Tell Our Story.</strong>
+
+            <strong>
+              Tell Our Story.
+            </strong>
+
           </h1>
 
           <p>
-            Explore moments from academic life, sports, student
-            activities and the Oloolua community.
+            Explore academic life, student activities,
+            fashion, sports, achievements and memorable
+            moments from the Oloolua community.
           </p>
 
         </div>
@@ -104,33 +261,43 @@ const Gallery = () => {
       </section>
 
 
-      {/* =====================================
+
+      {/* =========================
           INTRO
-      ===================================== */}
+      ========================= */}
 
       <section className="galleryIntro">
 
-        <span>THE OLOOLUA EXPERIENCE</span>
+        <span>
+          THE OLOOLUA EXPERIENCE
+        </span>
 
         <h2>
+
           Every Moment
-          <strong>Matters.</strong>
+
+          <strong>
+            Matters.
+          </strong>
+
         </h2>
 
         <p>
-          From the classroom to the sports field, every experience
-          contributes to the growth, confidence and character of
-          our learners.
+          From classrooms and competitions to fashion,
+          friendships and celebrations, every experience
+          contributes to the story of Oloolua Senior School.
         </p>
 
       </section>
 
 
-      {/* =====================================
+
+      {/* =========================
           FILTERS
-      ===================================== */}
+      ========================= */}
 
       <section className="gallerySection">
+
 
         <div className="galleryFilters">
 
@@ -138,14 +305,20 @@ const Gallery = () => {
 
             <button
               key={category}
+
               className={
                 activeCategory === category
                   ? "active"
                   : ""
               }
-              onClick={() => setActiveCategory(category)}
+
+              onClick={() =>
+                setActiveCategory(category)
+              }
             >
+
               {category}
+
             </button>
 
           ))}
@@ -153,38 +326,92 @@ const Gallery = () => {
         </div>
 
 
-        {/* =====================================
-            GALLERY GRID
-        ===================================== */}
 
-        <div className="galleryGrid">
+        {/* =========================
+            GALLERY SECTIONS
+        ========================= */}
 
-          {filteredGallery.map((item, index) => (
+        <div className="gallerySections">
 
-            <article
-              className={`galleryItem galleryItem${index + 1}`}
-              key={item.image}
-              onClick={() => setSelectedImage(item)}
+
+          {visibleSections.map(section => (
+
+            <section
+              className="galleryCategorySection"
+              key={section.category}
             >
 
-              <img
-                src={item.image}
-                alt={item.title}
-              />
 
-              <div className="galleryItemOverlay">
+              {/* SECTION HEADING */}
+
+              <div className="galleryCategoryHeading">
 
                 <span>
-                  {item.category}
+                  OLOOLUA MOMENTS
                 </span>
 
-                <h3>
-                  {item.title}
-                </h3>
+                <h2>
+                  {section.category}
+                </h2>
+
+                <p>
+                  {section.description}
+                </p>
 
               </div>
 
-            </article>
+
+
+              {/* IMAGES */}
+
+              <div className="galleryGrid">
+
+                {section.images.map(
+                  (item, index) => (
+
+                    <article
+                      className={`galleryItem ${
+                        index === 0
+                          ? "galleryFeatured"
+                          : ""
+                      }`}
+                      key={`${section.category}-${index}`}
+
+                      onClick={() =>
+                        setSelectedImage({
+                          ...item,
+                          category:
+                            section.category
+                        })
+                      }
+                    >
+
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                      />
+
+
+                      <div className="galleryItemOverlay">
+
+                        <span>
+                          {section.category}
+                        </span>
+
+                        <h3>
+                          {item.title}
+                        </h3>
+
+                      </div>
+
+                    </article>
+
+                  )
+                )}
+
+              </div>
+
+            </section>
 
           ))}
 
@@ -193,29 +420,43 @@ const Gallery = () => {
       </section>
 
 
-      {/* =====================================
+
+      {/* =========================
           LIGHTBOX
-      ===================================== */}
+      ========================= */}
 
       {selectedImage && (
 
         <div
           className="galleryLightbox"
-          onClick={() => setSelectedImage(null)}
+
+          onClick={() =>
+            setSelectedImage(null)
+          }
         >
 
           <button
             className="galleryClose"
-            onClick={() => setSelectedImage(null)}
+
+            onClick={() =>
+              setSelectedImage(null)
+            }
           >
+
             ×
+
           </button>
+
 
           <img
             src={selectedImage.image}
             alt={selectedImage.title}
-            onClick={(e) => e.stopPropagation()}
+
+            onClick={(event) =>
+              event.stopPropagation()
+            }
           />
+
 
           <div className="lightboxCaption">
 
@@ -232,31 +473,6 @@ const Gallery = () => {
         </div>
 
       )}
-
-
-      {/* =====================================
-          CTA
-      ===================================== */}
-
-      <section className="galleryCTA">
-
-        <span>THE JOURNEY CONTINUES</span>
-
-        <h2>
-          Be Part Of
-          <strong>The Story.</strong>
-        </h2>
-
-        <p>
-          Discover a school where learners are encouraged to learn,
-          participate, lead and achieve.
-        </p>
-
-        <a href="/admissions">
-          Join Oloolua
-        </a>
-
-      </section>
 
     </main>
   );
