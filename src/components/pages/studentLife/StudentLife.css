@@ -1,0 +1,721 @@
+/* =========================================
+   STUDENT LIFE PAGE
+========================================= */
+
+.studentLifePage {
+    background: #FAF8F5;
+    color: #333;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.studentLifeHero {
+    position: relative;
+
+    min-height: 68vh;
+
+    display: flex;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.studentLifeHeroOverlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(42, 27, 18, .94) 0%,
+        rgba(42, 27, 18, .76) 40%,
+        rgba(42, 27, 18, .32) 80%
+    );
+}
+
+.studentLifeHeroContent {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding-top: 80px;
+
+    color: #fff;
+}
+
+.studentLifeHeroContent > span {
+    color: #D4AF37;
+
+    font-size: .85rem;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+}
+
+.studentLifeHeroContent h1 {
+    max-width: 800px;
+
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 5rem;
+
+    line-height: 1.05;
+}
+
+.studentLifeHeroContent h1 strong {
+    display: block;
+
+    color: #E6CC96;
+}
+
+.studentLifeHeroContent p {
+    max-width: 700px;
+
+    margin-bottom: 30px;
+
+    color: rgba(255,255,255,.9);
+
+    line-height: 1.9;
+
+    font-size: 1.05rem;
+}
+
+.studentLifeBreadcrumb {
+    display: flex;
+
+    gap: 12px;
+
+    font-size: .9rem;
+}
+
+.studentLifeBreadcrumb a {
+    color: #fff;
+}
+
+.studentLifeBreadcrumb span {
+    color: #D4AF37;
+}
+
+.studentLifeBreadcrumb strong {
+    color: rgba(255,255,255,.75);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.lifeIntro {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 110px 6%;
+
+    display: grid;
+
+    grid-template-columns: .9fr 1.1fr;
+
+    gap: 90px;
+}
+
+.lifeSectionTag {
+    color: #B88A44;
+
+    font-size: .8rem;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.lifeIntro h2,
+.sportsTalentContent h2 {
+    margin: 18px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.4rem;
+
+    line-height: 1.15;
+
+    color: #5A3E2B;
+}
+
+.lifeIntro h2 strong,
+.sportsTalentContent h2 strong {
+    display: block;
+
+    color: #B88A44;
+}
+
+.lifeIntroRight p,
+.sportsTalentContent p {
+    color: #666;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.studentLifeHeading {
+    max-width: 760px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+.studentLifeHeading > span {
+    color: #B88A44;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.studentLifeHeading h2 {
+    margin: 18px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.3rem;
+
+    color: #5A3E2B;
+}
+
+.studentLifeHeading h2 strong {
+    display: block;
+
+    color: #B88A44;
+}
+
+.studentLifeHeading p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CULTURE
+========================================= */
+
+.studentCulture {
+    padding: 110px 6%;
+
+    background: #fff;
+}
+
+.cultureGrid {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+.cultureCard {
+    padding: 38px 30px;
+
+    background: #FAF8F5;
+
+    border-radius: 20px;
+
+    border-top: 4px solid #B88A44;
+
+    transition: .35s;
+}
+
+.cultureCard:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,.08);
+}
+
+.cultureCard > span {
+    color: #D0B183;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.6rem;
+}
+
+.cultureCard h3 {
+    margin: 20px 0 12px;
+
+    color: #5A3E2B;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.5rem;
+}
+
+.cultureCard p {
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: .92rem;
+}
+
+
+/* =========================================
+   SPORTS
+========================================= */
+
+.sportsTalent {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 110px 6%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.studentLifeImagePlaceholder {
+    height: 500px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    background: #E9DED1;
+
+    color: #92755D;
+
+    border: 1px solid #DCCBBA;
+}
+
+.sportsList {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.sportsList span {
+    padding: 10px 18px;
+
+    background: #fff;
+
+    border: 1px solid #E7DCCD;
+
+    border-radius: 30px;
+
+    color: #5A3E2B;
+
+    font-size: .9rem;
+}
+
+
+/* =========================================
+   ACTIVITIES
+========================================= */
+
+.clubsLeadership {
+    padding: 110px 6%;
+
+    background: #fff;
+}
+
+.activityGrid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.activityGrid article {
+    padding: 38px;
+
+    border-radius: 20px;
+
+    background: #FAF8F5;
+
+    border: 1px solid #E9DFD2;
+}
+
+.activityGrid article > span {
+    color: #B88A44;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.4rem;
+}
+
+.activityGrid h3 {
+    margin: 15px 0;
+
+    color: #5A3E2B;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.5rem;
+}
+
+.activityGrid p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.studentValues {
+    padding: 110px 6%;
+
+    background: #3B261A;
+
+    color: #fff;
+}
+
+.valuesContent {
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.valuesContent > span {
+    color: #D4AF37;
+
+    font-size: .8rem;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+}
+
+.valuesContent h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.4rem;
+}
+
+.valuesContent h2 strong {
+    display: block;
+
+    color: #E6CC96;
+}
+
+.valuesContent p {
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.8;
+}
+
+.valuesGrid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.valuesGrid div {
+    padding: 25px;
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    border-radius: 15px;
+}
+
+.valuesGrid strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #D4AF37;
+}
+
+.valuesGrid span {
+    color: rgba(255,255,255,.75);
+}
+
+
+/* =========================================
+   GOAL BANNER
+========================================= */
+
+.studentGoalBanner {
+    padding: 120px 6%;
+
+    background: #FAF8F5;
+
+    text-align: center;
+}
+
+.goalBannerContent {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.goalBannerContent > span {
+    color: #B88A44;
+
+    font-size: .8rem;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+}
+
+.goalBannerContent h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.6rem;
+
+    color: #5A3E2B;
+}
+
+.goalBannerContent h2 strong {
+    display: block;
+
+    color: #B88A44;
+}
+
+.goalBannerContent p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+.goalStatement {
+    margin-top: 35px;
+
+    padding: 22px 30px;
+
+    background: #fff;
+
+    border-left: 5px solid #D4AF37;
+
+    border-radius: 12px;
+
+    color: #5A3E2B;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.3rem;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.studentLifeCTA {
+    padding: 120px 6%;
+
+    background: #5A3E2B;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.studentLifeCTA > div {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.studentLifeCTA span {
+    color: #D4AF37;
+
+    font-size: .8rem;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+}
+
+.studentLifeCTA h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.6rem;
+}
+
+.studentLifeCTA h2 strong {
+    display: block;
+
+    color: #E6CC96;
+}
+
+.studentLifeCTA p {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.8;
+}
+
+.studentLifeCTAButtons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.studentLifeCTAButtons a {
+    padding: 15px 32px;
+
+    border-radius: 40px;
+
+    background: #B88A44;
+
+    color: #fff;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.studentLifeCTAButtons a:hover {
+    background: #D4AF37;
+
+    transform: translateY(-3px);
+}
+
+.studentLifeCTAButtons .lifeOutlineButton {
+    background: transparent;
+
+    border: 1px solid rgba(255,255,255,.45);
+}
+
+.studentLifeCTAButtons .lifeOutlineButton:hover {
+    background: #fff;
+
+    color: #5A3E2B;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .cultureGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sportsTalent {
+        grid-template-columns: 1fr;
+    }
+
+    .valuesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .studentLifeHeroContent h1 {
+        font-size: 3rem;
+    }
+
+    .lifeIntro {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .lifeIntro h2,
+    .sportsTalentContent h2,
+    .studentLifeHeading h2,
+    .valuesContent h2,
+    .goalBannerContent h2,
+    .studentLifeCTA h2 {
+        font-size: 2.5rem;
+    }
+
+    .activityGrid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .studentLifeHero {
+        min-height: 60vh;
+    }
+
+    .studentLifeHeroContent h1 {
+        font-size: 2.4rem;
+    }
+
+    .cultureGrid,
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .studentLifeImagePlaceholder {
+        height: 330px;
+    }
+
+    .studentLifeCTAButtons {
+        flex-direction: column;
+    }
+
+}

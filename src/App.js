@@ -8,6 +8,10 @@ import SocialSciences from "./components/academics/socialSciences/SocialSciences
 import ArtsSports from "./components/academics/artsSports/ArtsSports";
 import Navbar from "./components/common/Navbar/Navbar";
 import Admissions from "./components/pages/admission/Admissions";
+import StudentLife from "./components/pages/studentLife/StudentLife";
+import Contact from "./components/pages/contact/Contact";
+import Gallery from "./components/pages/gallery/Gallery";
+import Footer from "./components/common/footer/Footer";
 
 function App() {
   return (
@@ -42,7 +46,20 @@ function App() {
         path="/admissions"
         element={<Admissions />} />
 
+      <Route
+        path="/student-life"
+        element={<StudentLife />} />
+
+      <Route
+        path="/gallery"
+        element={<Gallery />} />
+
+      <Route
+        path="/contact"
+        element={<Contact />} />
+
     </Routes>
+    <Footer />
     </>
   );
 }

@@ -32,12 +32,6 @@ const Admissions = () => {
             prepare learners for a successful future.
           </p>
 
-          <div className="admissionsBreadcrumb">
-            <a href="/">Home</a>
-            <span>/</span>
-            <strong>Admissions</strong>
-          </div>
-
         </div>
 
       </section>
