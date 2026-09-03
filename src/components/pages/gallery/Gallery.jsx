@@ -1,27 +1,43 @@
 import { useState } from "react";
 import "./Gallery.css";
 
-/* =====================
+/* =================================
    SCHOOL LIFE
-========================= */
+================================= */
 
-import students1 from "../../../assets/images/students.jpeg";
-import students2 from "../../../assets/images/6.jpeg";
-import students3 from "../../../assets/images/7.jpeg";
+import students1 from "../../../assets/images/academics1.jpeg";
+import students2 from "../../../assets/images/academics2.jpeg";
+import students3 from "../../../assets/images/students-fash.jpeg";
+import students4 from "../../../assets/images/school-life.jpeg";
+import students5 from "../../../assets/images/stude-life3.jpeg";
 
-/* =========================
+
+/* ==============================
    ACADEMICS
-========================= */
+================================= */
 
-import academics1 from "../../../assets/images/8.jpeg";
-import academics2 from "../../../assets/images/9.jpeg";
-import academics3 from "../../../assets/images/10.jpeg";
+import academics1 from "../../../assets/images/academics1.jpeg";
+import academics2 from "../../../assets/images/highschool.jpeg";
+import academics3 from "../../../assets/images/senior.jpeg";
+import academics4 from "../../../assets/images/students-aviation.jpeg";
+import academics5 from "../../../assets/images/teacher-aviation.jpeg";
+
+
+/* ==============================
+   TEACHERS
+================================= */
 
 import teachers1 from "../../../assets/images/teachers-r1.jpeg";
 import teachers2 from "../../../assets/images/teachers-r2.jpeg";
 import teachers3 from "../../../assets/images/teachers-r3.jpeg";
 import teachers4 from "../../../assets/images/teachers-r4.jpeg";
+import teachers5 from "../../../assets/images/teachers3.jpeg";
+import teachers6 from "../../../assets/images/teachers4.jpeg";
 
+
+/* =================================
+   FASHION
+================================= */
 
 import fashion1 from "../../../assets/images/fashion-pri.jpeg";
 import fashion2 from "../../../assets/images/fashion-win.jpeg";
@@ -29,13 +45,56 @@ import fashion3 from "../../../assets/images/fashi-2.jpeg";
 import fashion4 from "../../../assets/images/fash-1.jpeg";
 import fashion5 from "../../../assets/images/fash-selfie.jpeg";
 
+
+/* =================================
+   SPORTS
+================================= */
+
+import sports1 from "../../../assets/images/basketball-trophy-silver.jpeg";
+import sports2 from "../../../assets/images/sports-alb.jpeg";
+import sports3 from "../../../assets/images/sports2.jpeg";
+import sports4 from "../../../assets/images/boys-bake.jpeg";
+import sports5 from "../../../assets/images/girls-bake2.jpeg";
+import sports6 from "../../../assets/images/sports-bake.jpeg";
+
+
+/* =================================
+   SCHOOL TRIPS
+================================= */
+
+import schTrip1 from "../../../assets/images/geo-trip.jpeg";
+import schTrip2 from "../../../assets/images/senate.jpeg";
+import schTrip3 from "../../../assets/images/girl-front.jpeg";
+import schTrip4 from "../../../assets/images/stu-lake.jpeg";
+import schTrip5 from "../../../assets/images/teachers-lake.jpeg";
+import schTrip6 from "../../../assets/images/all.jpeg";
+
+
+/* =================================
+   ACHIEVEMENTS
+================================= */
+import Achiev1 from "../../../assets/images/basketball-trophy-silver.jpeg";
+import Achiev2 from "../../../assets/images/celebrating-small.jpeg";
+import Achiev3 from "../../../assets/images/girl-front.jpeg";
+import Achiev4 from "../../../assets/images/naturing.jpeg";
+import Achiev5 from "../../../assets/images/talent-1.jpeg";
+import Achiev6 from "../../../assets/images/talent.jpeg";
+
+/* =================================
+   GALLERY SECTIONS
+================================= */
+
 const gallerySections = [
+
+  /* =================================
+     SCHOOL LIFE
+  ================================= */
 
   {
     category: "School Life",
 
     description:
-      "Everyday moments that reflect friendship, learning and life within the Oloolua community.",
+      "Everyday moments that reflect friendship, learning, growth and life within the Oloolua community.",
 
     images: [
 
@@ -52,17 +111,31 @@ const gallerySections = [
       {
         image: students3,
         title: "Student Community"
+      },
+
+      {
+        image: students4,
+        title: "Life Beyond the Classroom"
+      },
+
+       {
+        image: students5,
+        title: "Building lasting relationships"
       }
 
     ]
   },
 
 
+  /* =================================
+     ACADEMICS
+  ================================= */
+
   {
     category: "Academics",
 
     description:
-      "Learning, discovery and academic experiences that inspire curiosity and excellence.",
+      "Learning, discovery and academic experiences that inspire curiosity, innovation and excellence.",
 
     images: [
 
@@ -79,43 +152,164 @@ const gallerySections = [
       {
         image: academics3,
         title: "Academic Excellence"
+      },
+
+      {
+        image: academics4,
+        title: "Students in Learning"
+      },
+
+      {
+        image: academics5,
+        title: "Innovation & Discovery"
       }
 
     ]
   },
 
+
+  /* =================================
+     ACHIEVEMENTS
+  ================================= */
+
+  {
+    category: "Achievements",
+
+    description:
+      "Celebrating accomplishments, milestones and moments of excellence across Oloolua Senior School.",
+
+    images: [
+
+      {
+        image: Achiev1,
+        title: "Celebrating Achievement"
+      },
+
+      {
+        image: Achiev2,
+        title: "Excellence & Success"
+      },
+
+      {
+        image: Achiev3,
+        title: "Academic Achievement"
+      },
+
+      {
+        image: Achiev4,
+        title: "Celebrating Our Learners"
+      },
+
+      {
+        image: Achiev5,
+        title: "Celebrating Talent"
+      },
+
+      {
+        image: Achiev6,
+        title: "Celebrating Hardwork"
+      }
+
+    ]
+  },
+
+
+  /* =================================
+     SPORTS
+  ================================= */
 
   {
     category: "Sports",
 
     description:
-      "Moments from the field where learners develop teamwork, discipline and sporting talent.",
+      "Moments from the field where learners develop teamwork, discipline, confidence and sporting talent.",
 
     images: [
 
       {
-        image: students2,
-        title: "Sports & Talent"
+        image: sports1,
+        title: "Basketball Trophy"
       },
 
       {
-        image: academics1,
-        title: "Teamwork"
+        image: sports2,
+        title: "Oloolua Sports"
       },
 
       {
-        image: students3,
+        image: sports3,
+        title: "Sports Competition"
+      },
+
+      {
+        image: sports4,
+        title: "Teamwork & Competition"
+      },
+
+      {
+        image: sports5,
         title: "Student Athletes"
       },
 
-      {
-        image: academics2,
-        title: "Training Sessions"
+       {
+        image: sports6,
+        title: "Naturing Talents"
       }
 
     ]
   },
 
+
+  /* =================================
+     SCHOOL TRIPS
+  ================================= */
+
+  {
+    category: "School Trips",
+
+    description:
+      "Learning beyond the classroom through educational trips, adventures and shared experiences.",
+
+    images: [
+
+      {
+        image: schTrip1,
+        title: "Educational Experiences"
+      },
+
+      {
+        image: schTrip2,
+        title: "Students on Tour"
+      },
+
+      {
+        image: schTrip3,
+        title: "Learning Beyond the Classroom"
+      },
+
+      {
+        image: schTrip4,
+        title: "Exploring Together"
+      },
+
+      {
+        image: schTrip5,
+        title: "Memorable School Trips"
+      },
+
+      {
+        image: schTrip6,
+        title: "Memorable School Trips"
+      }
+
+
+    ]
+  },
+
+
+  /* =================================
+     FASHION
+  ================================= */
 
   {
     category: "Fashion",
@@ -159,27 +353,44 @@ const gallerySections = [
   },
 
 
+  /* =================================
+     TEACHERS
+  ================================= */
+
   {
-    category: "Achievements",
+    category: "Teachers",
 
     description:
-      "Celebrating accomplishments, milestones and moments of excellence across the school.",
+      "Meet some of the dedicated educators who guide, mentor and inspire learners at Oloolua Senior School.",
 
     images: [
 
       {
-        image: academics3,
-        title: "Student Achievement"
+        image: teachers1,
+        title: "Our Teaching Team"
       },
 
       {
-        image: students1,
-        title: "Celebrating Excellence"
+        image: teachers2,
+        title: "Dedicated Educators"
       },
 
       {
-        image: academics2,
-        title: "Recognising Success"
+        image: teachers3,
+        title: "Inspiring Excellence"
+      },
+
+      {
+        image: teachers4,
+        title: "Our Teachers"
+      },
+      {
+        image: teachers5,
+        title: "Building Strong Relationships"
+      },
+      {
+        image: teachers6,
+        title: "Creating Memories"
       }
 
     ]
@@ -188,15 +399,25 @@ const gallerySections = [
 ];
 
 
+/* =================================
+   FILTER CATEGORIES
+================================= */
+
 const categories = [
   "All",
   "School Life",
   "Academics",
+  "Achievements",
   "Sports",
+  "School Trips",
   "Fashion",
-  "Achievements"
+  "Teachers"
 ];
 
+
+/* =================================
+   GALLERY COMPONENT
+================================= */
 
 const Gallery = () => {
 
@@ -206,6 +427,10 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] =
     useState(null);
 
+
+  /* =================================
+     FILTER SECTIONS
+  ================================= */
 
   const visibleSections =
     activeCategory === "All"
@@ -217,12 +442,13 @@ const Gallery = () => {
 
 
   return (
+
     <main className="galleryPage">
 
 
-      {/* =========================
+      {/* =============================
           HERO
-      ========================= */}
+      ================================= */}
 
       <section
         className="galleryHero"
@@ -240,6 +466,7 @@ const Gallery = () => {
             OUR GALLERY
           </span>
 
+
           <h1>
 
             Moments That
@@ -250,10 +477,11 @@ const Gallery = () => {
 
           </h1>
 
+
           <p>
             Explore academic life, student activities,
-            fashion, sports, achievements and memorable
-            moments from the Oloolua community.
+            fashion, sports, achievements, school trips
+            and memorable moments from the Oloolua community.
           </p>
 
         </div>
@@ -262,15 +490,16 @@ const Gallery = () => {
 
 
 
-      {/* =========================
+      {/* =================================
           INTRO
-      ========================= */}
+      ================================= */}
 
       <section className="galleryIntro">
 
         <span>
           THE OLOOLUA EXPERIENCE
         </span>
+
 
         <h2>
 
@@ -282,22 +511,23 @@ const Gallery = () => {
 
         </h2>
 
+
         <p>
           From classrooms and competitions to fashion,
-          friendships and celebrations, every experience
-          contributes to the story of Oloolua Senior School.
+          friendships, school trips and celebrations,
+          every experience contributes to the story
+          of Oloolua Senior School.
         </p>
 
       </section>
 
 
 
-      {/* =========================
+      {/* =============================
           FILTERS
-      ========================= */}
+      ================================= */}
 
       <section className="gallerySection">
-
 
         <div className="galleryFilters">
 
@@ -327,12 +557,11 @@ const Gallery = () => {
 
 
 
-        {/* =========================
+        {/* =============================
             GALLERY SECTIONS
-        ========================= */}
+        ================================= */}
 
         <div className="gallerySections">
-
 
           {visibleSections.map(section => (
 
@@ -342,7 +571,7 @@ const Gallery = () => {
             >
 
 
-              {/* SECTION HEADING */}
+              {/* CATEGORY HEADING */}
 
               <div className="galleryCategoryHeading">
 
@@ -350,9 +579,11 @@ const Gallery = () => {
                   OLOOLUA MOMENTS
                 </span>
 
+
                 <h2>
                   {section.category}
                 </h2>
+
 
                 <p>
                   {section.description}
@@ -362,7 +593,9 @@ const Gallery = () => {
 
 
 
-              {/* IMAGES */}
+              {/* =============================
+                  IMAGE GRID
+              ================================= */}
 
               <div className="galleryGrid">
 
@@ -375,6 +608,7 @@ const Gallery = () => {
                           ? "galleryFeatured"
                           : ""
                       }`}
+
                       key={`${section.category}-${index}`}
 
                       onClick={() =>
@@ -397,6 +631,7 @@ const Gallery = () => {
                         <span>
                           {section.category}
                         </span>
+
 
                         <h3>
                           {item.title}
@@ -421,9 +656,9 @@ const Gallery = () => {
 
 
 
-      {/* =========================
+      {/* =================================
           LIGHTBOX
-      ========================= */}
+      ================================= */}
 
       {selectedImage && (
 
@@ -442,9 +677,7 @@ const Gallery = () => {
               setSelectedImage(null)
             }
           >
-
             ×
-
           </button>
 
 
@@ -464,6 +697,7 @@ const Gallery = () => {
               {selectedImage.category}
             </span>
 
+
             <h3>
               {selectedImage.title}
             </h3>
@@ -473,9 +707,10 @@ const Gallery = () => {
         </div>
 
       )}
-
     </main>
+
   );
+
 };
 
 export default Gallery;
