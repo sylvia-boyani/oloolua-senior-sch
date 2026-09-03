@@ -378,8 +378,9 @@ ACADEMICS DROPDOWN
 
     width:300px;
     height:100vh;
-
-    background:#5A3E2B;
+    
+    background:#eeddd3;
+    color: #fff;
 
     display:flex;
     flex-direction:column;
@@ -399,4 +400,39 @@ ACADEMICS DROPDOWN
 
 }
 
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+    position: relative;
+    z-index: 1001; /* Must sit above .navMenu layer */
+    font-size: 1.8rem;
+    background: transparent;
+    border: none;
+    color: #fff; /* Adjust based on your theme header background */
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .navMenu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen */
+    width: 280px;
+    height: 100vh;
+    background-color: #562a10;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 24px 24px; /* Clearance for the button at top */
+    gap: 1.25rem;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+
+  .navMenu.active {
+    right: 0; /* Slide in */
+  }
 }

@@ -238,13 +238,11 @@ const Navbar = () => {
                 {/* MOBILE MENU BUTTON */}
 
                 <button
-                    className="menuButton"
-                    onClick={() =>
-                        setMenuOpen(!menuOpen)
-                    }
-                    aria-label="Toggle navigation menu"
-                >
-                    ☰
+                   className="menuButton"
+                   onClick={() => setMenuOpen(!menuOpen)}
+                   aria-label={menuOpen ? "Close menu" : "Open menu"}
+                   >
+                 {menuOpen ? "x" : "☰"}
                 </button>
 
             </div>
